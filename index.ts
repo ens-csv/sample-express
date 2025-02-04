@@ -5,7 +5,7 @@ const server = express();
 const port = 3000;
 
 server.get("/hello", function (_req: Request, res: Response) {
-    const response = routeHello(req, res);
+    const response = routeHello();
     res.send(response);
 });
 

@@ -17,8 +17,10 @@ const routeAPINames = async (): Promise<string> => {
     return names;
 };
 
-const routeWeather = 
-const routeWeatherData = (query: WeatherQueryInterface): WeatherDetailType => {
+const routeWeather = (query: WeatherQueryInterface): WeatherDetailType =>
+    queryWeatherData(query);
+
+const queryWeatherData = (query: WeatherQueryInterface): WeatherDetailType => {
     return {
         zipcode: query.zipcode,
         weather: "sunny",
