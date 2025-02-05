@@ -1,3 +1,7 @@
+interface WeatherProps {
+    weather: string;
+}
+
 type responseItemType = {
     id: string;
     name: string;
